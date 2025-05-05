@@ -3,29 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Academia Exemplo</title>
+  <title>Planos e Ofertas</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Academia Exemplo</h1>
+    <h1>Planos e Ofertas</h1>
     <nav>
       <a href="index.html">Início</a>
       <a href="planos.html">Planos e Ofertas</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Transforme sua vida com a gente</h2>
-    <p>Ambiente familiar, treinos para todas as idades e acompanhamento profissional.</p>
-  </section>
-
-  <section class="galeria">
-    <h2>Nossa Estrutura</h2>
-    <div class="imagens">
-      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Academia moderna">
-      <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Equipamentos">
-      <img src="https://images.unsplash.com/photo-1579758629939-03608ccdbaba" alt="Crianças na academia">
+  <section class="planos">
+    <div class="plano">
+      <h3>Plano Básico</h3>
+      <p>R$ 99/mês</p>
+      <ul>
+        <li>Acesso livre à academia</li>
+        <li>Aulas coletivas</li>
+      </ul>
+    </div>
+    <div class="plano">
+      <h3>Plano Família</h3>
+      <p>R$ 199/mês</p>
+      <ul>
+        <li>2 adultos + 2 crianças</li>
+        <li>Treinos personalizados</li>
+      </ul>
+    </div>
+    <div class="plano">
+      <h3>Plano Premium</h3>
+      <p>R$ 249/mês</p>
+      <ul>
+        <li>Personal Trainer</li>
+        <li>Nutrição + Avaliação física</li>
+      </ul>
     </div>
   </section>
 
