@@ -1,27 +1,60 @@
+/* Corpo geral sem fundo */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
+  color: #000;
 }
 
-header {
+/* Cabeçalho e rodapé */
+header, footer {
   background-color: #111;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
+/* Navegação */
 nav a {
   margin: 0 15px;
   color: #fff;
   text-decoration: none;
 }
 
-section {
-  padding: 30px;
+/* Seções com imagem de fundo em tela cheia */
+#sobre, #planos {
+  background-image: url('fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh; /* altura total da tela */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
 }
 
+/* Camada escura para leitura */
+#sobre::before, #planos::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+}
+
+/* Conteúdo acima do escurecimento */
+#sobre *, #planos * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cartões dos planos */
 .planos {
   display: flex;
   gap: 20px;
@@ -30,22 +63,11 @@ section {
 }
 
 .plano {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
   width: 250px;
   text-align: center;
-}
-
-.plano h3 {
-  color: #333;
-}
-
-footer {
-  text-align: center;
-  background-color: #111;
-  color: white;
-  padding: 15px;
-  margin-top: 30px;
 }
